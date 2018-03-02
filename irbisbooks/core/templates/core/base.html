@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>IrbisBooks</title>
+    </head>
+    <body>
+        {% if irbis_api_response %}
+            <h2>Ответ Irbis-API</h2>
+            <p>{{ irbis_api_response }}</p>
+        {% endif %}
+        {% if book_list %}
+            <h2>Список книг</h2>
+            <ul>
+                {% for book in book_list %}
+                    <li>
+                        <a href="{% url 'book_download' %}?{{ book.url_params }}">{{ book.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>

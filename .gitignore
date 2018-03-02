@@ -1,0 +1,43 @@
+###############################################################
+# Untracked file templates by Git version control system      #
+# Шаблоны файлов неотслеживаемых системой контроля версий Git #
+###############################################################
+
+
+# Язык программирования Python
+
+# Байт-код Python
+*.pyc
+
+# Виртуальное окружение Python
+.venv
+
+# setuptools
+*.egg-info
+dist/
+build/
+
+
+# Django
+
+# Файлы миграций Django ORM (временно, на ранний этап разработки)
+
+irbisbooks/static_root
+
+
+# Базы данных
+
+# SQLite3
+*.sqlite3
+
+
+# Интегрированные среды разработки (IDE)
+
+# Geany
+*.geany
+
+# JetBrains (AppCode, CLion, DataGrip, PyCharm, Rider, WebStorm и др.)
+.idea
+
+# Sublime Text
+*.sublime-*
